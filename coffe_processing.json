@@ -1,10 +1,17 @@
-{
+ {
   "parent": "app_vposm.json",
   "name": "vposm",
   "assets": "vposm",
   "screens": {
-    "vmc_processing": {
+ "vmc_processing": {
+      "comment": "vmc_processing screen",
+      "name": "vmc_processing",
+      "type": "vend_screen",
       "root": {
+        "type": "relative_layout",
+        "width": "match_parent",
+        "height": "match_parent",
+        "background": "@shapes/screen_background",
         "views": [
           {
             "type": "lottie",
@@ -12,11 +19,12 @@
             "center_in_parent": true,
             "name": "processing_new",
             "repeats": 9999999999,
-            "width": "490dp",
+            "width": "480dp",
             "height": "480dp"
           }
         ]
-      }
-    }
+      },
+      "logic": {}
+    },
   }
-}
+ }
