@@ -1,0 +1,22 @@
+{
+  "parent": "app_vposm.json",
+  "name": "vposm",
+  "assets": "vposm",
+  "screens": {
+    "vmc_processing": {
+      "root": {
+        "views": [
+          {
+            "type": "lottie",
+            "url": "https://raw.githubusercontent.com/Shaxda/static/refs/heads/main/CoffeeTea.json",
+            "center_in_parent": true,
+            "name": "processing_new",
+            "repeats": 9999999999,
+            "width": "490dp",
+            "height": "480dp"
+          }
+        ]
+      }
+    }
+  }
+}
