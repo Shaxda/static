@@ -1,0 +1,32 @@
+{
+  "parent": "app_vposm.json",
+  "name": "vposm",
+  "assets": "vposm",
+  "screens": {
+    "vmc_processing": {
+      "comment": "vmc_processing screen",
+      "name": "vmc_processing",
+      "type": "vend_screen",
+      "root":
+      {
+        "type": "relative_layout",
+        "width": "match_parent",
+        "height": "match_parent",
+        "background": "@shapes/screen_background",
+        "views":
+        [
+          {
+            "type": "lottie",
+			"margin":50,
+            "url": "https://raw.githubusercontent.com/Shaxda/static/refs/heads/main/LoadingCoffee.json",
+            "center_in_parent": true,
+            "name": "processing_new",
+            "repeats": 9999999999
+          }
+        ]
+      },
+      "logic": {
+      }
+    }
+  }
+}
