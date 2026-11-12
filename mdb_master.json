@@ -45,7 +45,7 @@
         "views": [
           {
             "type": "lottie",
-            "url": "https://raw.githubusercontent.com/AsafcNayax/public-assets-demo/refs/heads/main/coffee_lottties/coffee_Tuesday_opt-2.json",
+            "url": "https://raw.githubusercontent.com/Shaxda/static/refs/heads/main/LoadingCoffee.json",
             "center_in_parent": true,
             "name": "processing_new",
             "repeats": 9999999999
