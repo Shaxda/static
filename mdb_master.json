@@ -1,0 +1,112 @@
+{
+  "parent": "app_vposm.json",
+  "name": "vposm",
+  "assets": "vposm",
+  "screens": {
+    "pay": {
+      "root": {
+        "views": [
+          {
+            "id": "id__payment_types",
+            "type": "include",
+            "width": "match_parent",
+            "align_parent_bottom": true,
+            "view": "view__payment_types"
+          },
+          {
+            "type": "flow_layout",
+            "width": "match_parent",
+            "height": "match_parent",
+            "center_in_parent": true,
+            "provider": "data(scheme:custom_idle_pages)",
+            "infinite": true,
+            "auto_advance": true,
+            "transition_type": "none",
+            "fade_duration": 0,
+            "auto_advance_delay": 10000,
+            "indicator_bottom_margin": 90,
+            "indicator_active_color": "@white",
+            "indicator_fade_in": 300,
+            "indicator_fade_out": 400,
+            "user_pause_duration": 15000
+          },
+          {
+            "id": "id__status_bar",
+            "type": "include",
+            "width": "match_parent",
+            "align_parent_top": true,
+            "view": "view__title_w_lang"
+          }
+        ]
+      }
+    },
+    "vmc_processing": {
+      "root": {
+        "views": [
+          {
+            "type": "lottie",
+            "url": "https://raw.githubusercontent.com/AsafcNayax/public-assets-demo/refs/heads/main/coffee_lottties/coffee_Tuesday_opt-2.json",
+            "center_in_parent": true,
+            "name": "processing_new",
+            "repeats": 9999999999
+          }
+        ]
+      }
+    }
+  },
+  "views": {
+    "id__page_prod_select": {
+      "views": [
+        {
+          "type": "image",
+          "center_in_parent": true,
+          "src": "@assets/select_product_idle.png",
+          "name": "select_product_full"
+        },
+        {
+          "id": "id__title",
+          "type": "text",
+          "text": "Seleziona un prodotto",
+          "auto_max_lines": true,
+          "margin_start": 50,
+          "margin_end": 50,
+          "gravity": "center",
+          "center_horizontal": true,
+          "align_parent_top": true,
+          "margin_top": 7,
+          "size": "30sp",
+          "color": "#ffffff",
+          "width": "match_parent"
+        }
+      ]
+    },
+    "view__custom_page_custom_1": {
+      "id": "view__custom_page_custom_1",
+      "type": "relative_layout",
+      "width": "match_parent",
+      "height": "match_parent",
+      "views": [
+        {
+          "type": "lottie",
+          "id": "el_3",
+          "url": "https://raw.githubusercontent.com/AsafcNayax/public-assets-demo/refs/heads/main/coke_idle_480_10s_it.json",
+          "repeats": 9999999999,
+          "width": "match_parent",
+          "height": "match_parent",
+          "loop": true,
+          "center_in_parent": true
+        }
+      ]
+    }
+  },
+  "data": {
+    "custom_idle_pages": [
+      {
+        "layout": "id__page_prod_select"
+      },
+      {
+        "layout": "view__custom_page_custom_1"
+      }
+    ]
+  }
+}
